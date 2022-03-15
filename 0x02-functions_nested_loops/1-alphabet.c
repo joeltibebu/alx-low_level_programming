@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_alphabet - alphabet the code for Alx School students.
  * @void: no content

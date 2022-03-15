@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _isalpha - found the lowercase and uppercase of a letter
  * @c: a letter
