@@ -1,32 +1,28 @@
 #include "main.h"
+
 /**
- *_sqrt_recursion -returns the value of x raised to the power of y.
- *@n: integer
- *@i: integer
- *Return: integer
+ * _sqrt_recursion - main funct
+ * @n: int n
+ * Return: int
  */
-int power(int n, int i);
 int _sqrt_recursion(int n)
 {
-return (power(n, 1));
+	return (_sqrt(n, 1));
 }
-
 
 /**
- *power - checks if an integer is the square root of a number
- *@n : parameter designing an integer
- *@i : integer
- *
- *Return: i
+ * _sqrt - _sqrt_recursion
+ * @n: integer paramtr
+ * @i: integer parameter
+ * Return: sqrt
  */
-int power(int n, int i)
+int _sqrt(int n, int i)
 {
-if (n == i * i)
-{
-return (i);
-}
-else if (i * i > n)
-return (-1);
-else
-return (power(n, i + 1));
+	if (n < 0)
+		return (-1);
+	if ((i * i) > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (_sqrt(n, i + 1));
 }
